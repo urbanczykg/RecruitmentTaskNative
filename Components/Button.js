@@ -21,14 +21,14 @@ export default function Button1(){
         <View style={{flex:1}} >
             {!loadingData ? <Button onPress={handleClick} title='zaladuj dane'/>  :  null}
                   {loadingData && (<View style={{flex:1}}>
-                      <View style={{flexDirecton:'row', justifyContent:'space-around'}}>
-                          <Text>Marka                   ID                 Model</Text>
-                         
+                      <View style={{flexDirecton:'row', justifyContent:'space-around'  }}>
+                          <Text style={{fontSize:16, fontWeight: '700'}}>Marka                ID               Model</Text>
+
                       </View>
                       <ScrollView style={{flex:1}}>
                           {data.map(({Make_Name, Model_ID, Model_Name})=>(
-                            <View style={{flexDirecton:'row', justifyContent:'space-around'}} key={Model_ID}>
-                                <Text>{Make_Name}               {Model_ID}             {Model_Name}</Text>
+                            <View style={{flexDirecton:'center', justifyContent:'space-around'}} key={Model_ID}>
+                                <Text >{Make_Name}               {Model_ID}             {Model_Name}</Text>
                                 
                                 <Text></Text>
                                 
