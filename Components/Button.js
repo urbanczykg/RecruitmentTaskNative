@@ -41,17 +41,3 @@ export default function Button1(){
 }
 
 
-
-/* <DataTable>
-                    <DataTable.Header>
-                        <DataTable.Title> Marka </DataTable.Title>
-                        <DataTable.Title numeric> ID </DataTable.Title>
-                        <DataTable.Title> Model</DataTable.Title>
-                    </DataTable.Header>
-                    {data.map(({Make_Name, Model_ID}, index) =>(
-                    <DataTable.Row key={index}>
-                        <DataTable.Cell>{Make_Name}</DataTable.Cell>
-                        <DataTable.Cell>{Model_ID} </DataTable.Cell>
-                    </DataTable.Row>
-                      ))}
-                 </DataTable>*/
